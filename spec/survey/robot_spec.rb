@@ -29,6 +29,7 @@ describe "Robot" do
   end
 
   it 'moves the robot' do
+    robot.north
     expect(robot.move).to eq([1,4])
   end
 
