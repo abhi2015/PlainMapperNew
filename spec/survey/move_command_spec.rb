@@ -6,7 +6,7 @@ describe "north command" do
 
   it "returns new direction" do
     robot.north
-    expect(MoveCommand.new.execute(robot)).to eq([1,2]])
+    expect(MoveCommand.new.execute(robot)).to eq([1,2])
   end
   
 end
