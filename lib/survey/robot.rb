@@ -1,3 +1,4 @@
+#defines the robot and it's orientation
 class Robot
 
   def initialize(x,y,dirxn)

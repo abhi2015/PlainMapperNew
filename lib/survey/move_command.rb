@@ -1,3 +1,4 @@
+#it moves the robot
 class MoveCommand
   def execute(robot)
     robot.move

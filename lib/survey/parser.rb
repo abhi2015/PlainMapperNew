@@ -19,9 +19,10 @@ class Parser
       command = NorthCommand.new
     elsif command_string == "RIGHT"  && robot.getDirxn == "SOUTH"
       command = WestCommand.new
-    elsif command_string == "MOVE" && robot.getDirxn == "EAST"
+    elsif command_string == "MOVE"
       command = MoveCommand.new
     end
+    
     return command
   end
 

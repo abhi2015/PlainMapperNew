@@ -1,3 +1,4 @@
+#includes the parser and the robots
 class Application
 
   def start
@@ -19,9 +20,11 @@ class Application
       temp = cmd.execute(robot1)
     end
 
-    input3_arr = gets.chomp.split(' ')
+    input3 = gets.chomp
+    input3_arr = input3.split(' ')
     robot2 = Robot.new(input3_arr[0].to_i,input3_arr[1].to_i,input3_arr[2])
-    input4_arr = gets.chomp.split(' ')
+    input4 = gets.chomp
+    input4_arr = input4.split(' ')
 
     input4_arr.each do |i|
       cmd = parser.parse(i,robot2)
